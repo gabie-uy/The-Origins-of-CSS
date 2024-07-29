@@ -46,3 +46,34 @@ The following example selects elements with a ``class`` of ``"class-name"`` or a
 Rather than selecting every element with a matching class or id, the example above selects only div elements that either have a class of ``"class-name"`` or an id of ``"id-name"``.
 
 This specific kind of selection is also known as **targeting**.
+
+### Groupings
+
+Long version:
+
+    ul {
+        border: 1px solid;
+        width: 50px;
+    }
+
+    ol {
+        border: 1px solid;
+        width: 50px;
+    }
+
+Short version:
+
+    ul, ol {
+        border: 1px solid;
+        width: 50px;
+    }
+
+### Combining
+
+We can also get more specific by using the ``>`` symbol to select child elements, such as only ``<li>`` elements under unordered lists:
+
+    ul > li {
+        border: 1px solid;
+        width: 50px;
+    }
+
