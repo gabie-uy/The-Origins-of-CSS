@@ -356,3 +356,102 @@ Uses ``border-radius`` property
         border: 2px solid blue;
         border-radius: 5px;
     }
+
+## Padding Box
+
+![alt text](image-7.png)
+
+Uses ``padding`` property
+
+    padding: 40px;
+
+You can separate the values:
+
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+
+Or shorthand them:
+
+    padding: 5px 10px 15px 20px;
+
+Order is top, right, bottom, left.
+
+## Margin Box
+
+![alt text](image-8.png)
+
+Uses ``margin`` property
+
+    margin: 40px;
+
+You can separate the values:
+
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+Like the ``padding`` and ``border`` properties, ``margin`` is a shorthand for each side of the element:
+
+    margin: 20px 10px 20px 10px;
+
+## Centering Content
+
+You can *horizontally center* elements with the ``margin`` property, using ``auto``.
+
+Always set a ``width`` property to the element you want to center.
+
+    #container-element {
+        width: 300px;
+        height: 300px;
+        border: 3px solid;
+    }
+
+    #inner-element {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        background-color: orange;
+        margin: auto;
+    }
+
+![alt text](image-9.png)
+
+## Content Box vs. Border Box
+
+### 
+
+By default, an element's width and height properties only deal with the content box. But if there's any padding around the content, or a border, the entire element appears wider on the page.
+
+The ``box-sizing`` property tells our website how to calculate the ``width`` and ``height`` properties of a given element.
+
+To explain the difference:
+
+    #content-box {
+        text-align: center;
+        background-color: skyblue;
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+        border: 2px;
+    }
+
+    #border-box {
+        text-align: center;
+        background-color: skyblue;
+        width: 150px;
+        height: 150px;
+        padding: 20px;
+        border: 2px;
+        box-sizing: border-box;
+    }
+
+![alt text](image-10.png)
+
+- The default value is content-box, which adds the ``padding`` and border values to the final ``width`` of the element.
+- However, we can switch this to ``border-box``, and make it so that ``padding`` and border are included in the final width, and the element maintains its expected size.
+
+In the element under “Border Box”, the ``padding`` and ``border`` are factored in the content ``width``. Therefore, the size of the content box will change to maintain that ``150px`` width.
+
