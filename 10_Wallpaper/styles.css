@@ -1,0 +1,13 @@
+#outer {
+    width: 500px;
+    height: 500px;
+    background-color: orange;
+}
+
+#inner {
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('https://www.catster.com/wp-content/uploads/2023/11/Blue-British-Longhair-cat-on-blue-steps_Oleksandr-Volchanskyi_Shutterstock.jpg')
+}

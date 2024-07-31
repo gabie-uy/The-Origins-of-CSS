@@ -222,3 +222,69 @@ Text-based content may align its text in certain ways to make it more readable a
 
 ``text-decoration``
 
+## Background Color
+
+``background-color`` is different from ``color``
+
+    /* With named colors */
+        div {
+        background-color: red;
+    }
+
+    /* With rgb() function */
+        div {
+        background-color: rgb(0, 0, 255);
+    }
+
+    /* With hexadecimals */
+        div {
+        background-color: #ffff00;
+    }
+
+![alt text](image-3.png)
+
+## Background Image
+
+``background-image``
+
+    div {
+        background-image: url('https://cdn.pixabay.com/photo/2017/08/10/19/13/city-skyline-2626619_960_720.jpg');
+    }
+
+``url()`` function that accepts a URL or file path to an image.
+
+``background-size`` to change the background image size.
+
+``background-size: contain;`` this scales the image to fit the container and not crop it; the ``cover`` value will crop the image.
+
+``background-repeat`` property will repeat the image, followed by the ``no-repeat`` option otherwise.
+
+## Shorthands
+
+``border``
+
+    span {
+        border-width: 3px;
+        border-style: dashed;
+        border-color: #ff0000;
+    }
+    
+    span {
+        border: 3px dashed #ff0000;
+    }
+
+Long version:
+
+    span {
+        font-family: Georgia, serif;
+        font-weight: 800;
+        font-size: 12px;
+    }
+
+Short version:
+
+    span {
+        font: 800 12px Georgia, serif;
+    }
+
+**The shorthand ``font`` property must at least have a value for the ``font-family`` and ``font-size`` properties.** *Everything else is optional, but the font-weight must go before the font-size (e.g., 800 12px).*
