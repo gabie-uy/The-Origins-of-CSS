@@ -200,3 +200,25 @@ The 400-700 range is considered "normal" for most fonts.
 
 ## Alignment
 
+Text-based content may align its text in certain ways to make it more readable and user-friendly.
+
+``text-align``
+
+    #left-align {
+        text-align: left;
+    }
+
+    #center-align {
+        text-align: center;
+    }
+
+    #right-align {
+        text-align: right;
+    }
+
+![alt text](image-2.png)
+
+## Decoration
+
+``text-decoration``
+
