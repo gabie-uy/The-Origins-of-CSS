@@ -288,3 +288,71 @@ Short version:
     }
 
 **The shorthand ``font`` property must at least have a value for the ``font-family`` and ``font-size`` properties.** *Everything else is optional, but the font-weight must go before the font-size (e.g., 800 12px).*
+
+## Box Model
+
+*Everything* on a web page is in a box. Every element on a page follows the box model.
+
+![alt text](image-4.png)
+
+Box Model: Inner to Outer
+
+1. A **content box** for things like text and images.
+2. A **padding box** of space around the content.
+3. A **border box** that goes around the padding.
+4. A **margin box** of empty space that surrounds the whole element.
+
+Go to the course page for The Origins II: CSS: https://www.codedex.io/css
+
+Find the box model in your browser's dev tools:
+
+- Google Chrome: Right-click > "Inspect" > "Computed" tab.
+- Safari: "Safari" > "Settings" > "Advanced" tab > "Show features for web developers" (near the bottom). Now click "Develop" > "Show Web Inspector".
+
+## Border Box
+
+![alt text](image-5.png)
+
+Uses ``border`` property
+
+        /* Both of these are the same */
+
+        h1 {
+            border: 2px solid blue;
+        }
+
+        h1 {
+            border-width: 2px;
+            border-style: solid;
+            border-color: blue;
+        }
+
+- ``border-width`` determines the "thickness" of the border, and is usually set with absolute units (e.g., pixels).
+- ``border-style`` includes values like solid, dashed, dotted.
+- ``border-color`` can be set with a named color, an rgb() value, or a hexadecimal
+
+![alt text](image-6.png)
+
+**Border Styling Properties**
+
+- ``border-top``, 
+- ``border-right``, 
+- ``border-bottom``,
+- ``border-left``
+
+
+        h1 {
+            border-top: 5px dashed red;
+            border-right: 5px dotted purple;
+            border-bottom: 5px double yellow;
+            border-left: 5px solid green;
+        }
+
+## Round Corners
+
+Uses ``border-radius`` property
+
+    h1 {
+        border: 2px solid blue;
+        border-radius: 5px;
+    }
