@@ -563,4 +563,3 @@ The ``fixed`` position works similar to ``absolute`` by taking an element out of
 The ``sticky`` option keeps the element in flow with the other elements. As you scroll the page, the element will stay in its normal spot until it is a certain distance from the top of its containing element (after which it will stick to a place).
 
     position: sticky;
-
