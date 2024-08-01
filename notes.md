@@ -455,3 +455,44 @@ To explain the difference:
 
 In the element under “Border Box”, the ``padding`` and ``border`` are factored in the content ``width``. Therefore, the size of the content box will change to maintain that ``150px`` width.
 
+## Lines & Blocks
+
+### Displaying Elements
+
+- Some elements would be written on their own line.
+- Other elements would be able to share a line with other elements.
+
+**Block** elements take up the entire ``width`` of whatever they're inside of. However, this can be changed (as well as the ``height``).
+
+- By default, block elements are rendered on their own line by themselves.
+- The ``<div>`` and ``<p>`` elements are common block elements. Each element is displayed on its own line.
+
+**Inline** elements only take up as much space as needed, and other elements may appear beside them! The ``<a>`` anchor element is a very popular inline element because links are always being used within blocks of text (e.g., a Wikipedia article with lots of links to other places).
+- If we wanted to change the default display of these elements, we would use the display property!
+
+        a {
+            display: block;
+        }
+
+***Note: Unlike block elements, inline elements cannot change their width or height properties.***
+
+When you set an element to display: ``inline-block``, you get the best of both worlds:
+- It can share the same line with other inline elements.
+- Despite being inline, its width and height can be changed.
+
+        #block {
+            background-color: lightcoral;
+            height: 100px;
+        }
+
+        #inline {
+            background-color: lightblue;
+        }
+
+        #inline-block {
+            background-color: lightgreen;
+        }
+
+![alt text](image-11.png)
+
+*Note: As shown above, some elements, like the ``<div>`` element, behave weirdly when set to just inline. Any content inside remains, but the width and height of the ``<div>`` are practically not there anymore.*
